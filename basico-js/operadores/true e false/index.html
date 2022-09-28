@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True e False</title>
+</head>
+<body>
+    <script>
+
+        function testfTrufhy(val){
+            return val ? console.log('thufhy'): console.log("falsy");
+        }
+
+        testfTrufhy(true);
+        testfTrufhy(false);
+        testfTrufhy(new Boolean(false));
+        testfTrufhy('');
+        testfTrufhy('packet');
+        testfTrufhy(new String(''));
+        testfTrufhy(1);
+        testfTrufhy(-1);
+        testfTrufhy(NaN);
+        testfTrufhy(new Number(NaN));
+        testfTrufhy({});
+        let obj ={name: "Bruno"};
+        testfTrufhy(obj);
+        testfTrufhy(obj.name);
+        testfTrufhy(obj.age);
+
+        
+    </script>
+</body>
+</html>
