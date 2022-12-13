@@ -1,13 +1,8 @@
-class Book {
-    constructor(title, pages, isbn) {
-        this.title = title;
-        this.pages = pages;
-        this.isbn = isbn;
-    }
+function restP(x, y, ...a){
+
+    console.log(a)
+    return (x+y) * a.length;
 }
 
-var book = new Book('title', 'pag', 'isbn');
-
-console.log(book.title);
-book.title = 'new title';
-console.log(book.title);
+console.log(restP(1, 2, 'hello', true, 7));
+console.log(a)
