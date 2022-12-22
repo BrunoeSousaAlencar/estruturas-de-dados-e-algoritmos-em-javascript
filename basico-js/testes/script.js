@@ -1,8 +1,34 @@
-function restP(x, y, ...a){
+// ES6 classes
+class Book {
+    constructor(title, pages, isbn) {
 
-    console.log(a)
-    return (x+y) * a.length;
-}
+      this.title = title;
+      this.pages = pages;
+      this.isbn = isbn;
 
-console.log(restP(1, 2, 'hello', true, 7));
-console.log(a)
+    }
+
+    printIsbn() {
+      console.log(this.isbn);
+    }
+
+  }
+  
+  //inheritance
+  class ITBook extends Book {
+
+    constructor(title, pages, isbn, technology) {
+
+      super(title, pages, isbn);
+      this.technology = technology;
+    }
+
+    printTechnology() {
+      console.log(this.technology);
+    }
+  }
+
+  let jsBook = new ITBook('Learning JS Algorithms', '200', '1234567890', 'JavaScript');
+  
+  console.log(jsBook.title);
+  console.log(jsBook.printTechnology());
